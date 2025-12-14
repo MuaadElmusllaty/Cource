@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is GitHub?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1 {
+            color: #004089;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid #ffc107;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 20px auto;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #funText {
+            text-align: center;
+            font-weight: bold;
+            color: #dc3545;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>What is GitHub?</h1>
+    <p>GitHub is a web-based platform that uses Git for version control. It allows developers to host, share, and collaborate on code projects from anywhere in the world.</p>
+    <div class="highlight">
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Repository hosting</li>
+            <li>Version control with Git</li>
+            <li>Collaboration tools</li>
+            <li>Issue tracking</li>
+            <li>Pull requests</li>
+        </ul>
+    </div>
+    <p>Whether you're a beginner learning to code or a professional developer, GitHub makes it easy to work on projects with others and keep track of changes to your code.</p>
+    <button id="funBtn">Click for Fun!</button>
+    <div id="funText"></div>
+    <script>
+        document.getElementById('funBtn').addEventListener('click', function() {
+            const funText = document.getElementById('funText');
+            const messages = [
+                "GitHub is awesome!",
+                "Code, collaborate, conquer!",
+                "Start this repo!",
+                "You're a GitHub pro now!"
+            ];
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            funText.textContent = randomMessage;
+            funText.style.animation = 'bounce 1s';
+        });
+        // Simple bounce animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+                40% { transform: translateY(-10px); }
+                60% { transform: translateY(-5px); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
