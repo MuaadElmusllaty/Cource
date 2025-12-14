@@ -1,16 +1,3 @@
-﻿\✍️ README Styles Showcase
-
----
-
-\🚀 Heading Styles
-
-
-
-\ This is a simple README.md file
-
----
-
----
 
 ⚙️ Essential Git Workflow: Creating, Editing, and Deleting Files
 
@@ -86,3 +73,4 @@ Always perform a `pull` *before* starting work or *before* attempting a `push` i
 ***
 
 **Pro Tip:** If you encounter an error during the `push` saying you were "rejected (fetch first)," it means you must run **`git pull origin main`** first to resolve the difference before attempting to **`git push origin main`** again.
+
